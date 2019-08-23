@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+
+#box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../images/3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff9999;
+  background: rgba(255,212,204,0.5);
+  color: #fff;
+  font-size: 25px;
+  padding: 30px 50px;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+/* body */
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #ff99cc;
+}
+.body h1 {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: #ff9999;
+  margin-bottom: 40px;
+}
+.body h2 {
+  color: #ffe6e6;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+/* トップ */
+.back{
+  font-family: 'Mv Boli','Segoe Print','Segoe Script',sans-serif;
+  background-image: url(../images/top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.top{
+  font-size: 70px;
+  color: #ffcccc;
+  padding-top: 280px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px #b38f8f;
+}
+
+/* ボタン */
+.btn-square-soft {
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  left: 620px;
+  text-decoration: none;
+  color: #ff9999;
+  width: 130px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold;
+  background: linear-gradient(#fed6e3 0%, #ffaaaa 100%);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+}
+.btn-square-soft:active {
+  /*押したとき*/
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);/*沈むように*/
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(#fed6e3 0%, #ffbcbc 100%);/*グラデーションを明るく*/
+}
+
+
+/* おみくじ */
+.container {
+  background-image: url(../images/unsei.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgb(123, 66, 255);
+  background-image: linear-gradient(#31dffd 0%, #9552ff 100%);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.result p {
+  color: white;
+  font-size: 30px;
+}
+
+.btn {
+  width: 200px;
+  background: #f9a9ae;
+  color: white;
+  border-radius: 13px;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.btn:hover {
+  opacity: .7;
+}
+
+#kazuko{
+  position: relative;
+  width: 0;
+  height: 0;
+  left: 1000px;
+  bottom: 500px;
+}
+
+#god{
+  position: relative;
+  color: #ff9999;
+  font-size: 50px;
+  width: 800px;
+  height: 0;
+  left: 400px;
+  bottom: 630px;
+  text-shadow:
+        1px 1px 1px #f99,
+        1px -1px 10px #fff,
+        -1px 1px 1px #fff,
+        -1px -1px 1px #fff,
+        0 0 22px #fff;
+}
+
+#sagi{
+  position: relative;
+  width: 300px;
+  height: 0;
+  left: 640px;
+  bottom: 100px;
+  font-size: 30px;
+}
